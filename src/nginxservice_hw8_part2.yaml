@@ -1,0 +1,14 @@
+#nginxservice_part2.yaml
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-service
+spec:
+  ports:
+    - name: nginx
+      protocol: TCP
+      port: 443
+      targetPort: 80  
+  selector:
+    app: nginx-app

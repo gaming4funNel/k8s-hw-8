@@ -1,0 +1,19 @@
+#configmap_hw23_part2.yaml
+
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nginx-configmap
+data:
+  index.html: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <title>Welcome to nginx!</title>
+    </head>
+    <body>
+    <h1>Welcome to nginx!</h1>
+    <h1> Hello Igor!</h1>
+    </body>
+    </html>
